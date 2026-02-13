@@ -59,4 +59,5 @@ Naomi Zephania
 This project is deployed on Vercel using GitHub integration.
 
 ## Screenshots
-<img width="473" height="296" alt="image" src="https://github.com/user-attachments/assets/d0b26ae2-faff-405b-ad17-1701c2420de5" />
+<img width="473" height="296" alt="image" src="<img width="471" height="293" alt="image" src="https://github.com/user-attachments/assets/1ccf7642-547e-4364-9cab-67eefbcffd37" />
+" />
