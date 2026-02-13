@@ -104,9 +104,10 @@ export default function Home() {
             onChange={(e) => setAuthor(e.target.value)}
           />
 
-          <Button variant="add" onClick={handleAdd}>
-            Add Book
-          </Button>
+          <Button onClick={handleAdd}>
+             Add Book
+             </Button>
+
         </Card>
 
         {/* Book List */}
@@ -130,19 +131,18 @@ export default function Home() {
                     />
 
                     <div className="flex gap-2">
-                      <Button
-                        variant="add"
-                        onClick={() => handleSaveEdit(book.id)}
-                      >
-                        Save
-                      </Button>
+                      <Button onClick={() => handleSaveEdit(book.id)}>
+  Save
+</Button>
+
 
                       <Button
-                        variant="remove"
-                        onClick={handleCancelEdit}
-                      >
-                        Cancel
-                      </Button>
+                         variant="destructive"
+                              onClick={() => handleRemove(book.id)}
+                               >
+                                 Remove
+                                     </Button>
+
                     </div>
                   </>
                 ) : (
@@ -158,18 +158,17 @@ export default function Home() {
 
                     <div className="flex gap-2">
                       <Button
-                        variant="edit"
-                        onClick={() => handleEdit(book)}
-                      >
-                        Edit
-                      </Button>
+                        variant="secondary"
+                           onClick={() => handleEdit(book)}
+                           >
+                               Edit
+                            </Button>
 
-                      <Button
-                        variant="remove"
-                        onClick={() => handleRemove(book.id)}
-                      >
-                        Remove
-                      </Button>
+
+                      <Button variant="destructive" onClick={() => handleRemove(book.id)}>
+                             Remove
+                                 </Button>
+
                     </div>
                   </>
                 )}
